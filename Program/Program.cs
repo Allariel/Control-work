@@ -24,7 +24,7 @@ string[] Create_Short_Array(string[] array)
     int count =0;
     foreach (string x in array)
     {
-      if (array[i].Length<=3)
+      if (x.Length<=3)
       {
         count++;
       }
