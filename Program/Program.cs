@@ -22,9 +22,9 @@ void Print_Array(string[] array)
 string[] Create_Short_Array(string[] array)
 {
     int count =0;
-    foreach (string x in array)
+    for (int i = 0; i < array.Length; i++)
     {
-      if (x.Length<=3)
+      if (array[i].Length<=3)
       {
         count++;
       }
