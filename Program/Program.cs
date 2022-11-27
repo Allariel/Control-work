@@ -21,7 +21,24 @@ void Print_Array(string[] array)
 
 string[] Create_Short_Array(string[] array)
 {
-    string[] short_words = array.Where(element => element.Length <= 3).ToArray();
+    int count =0;
+    foreach (string x in array)
+    {
+      if (array.Length<=3)
+      {
+        count++;
+      }
+    }
+    string[] short_words= new string[count];
+    int j =0;
+    for (int i = 0; i < array.Length; i++)
+    {
+      if (array[i].Length<=3)
+      {
+        short_words[j]=array[i];
+        j++;
+      }
+    }
     return short_words;
 }
 
